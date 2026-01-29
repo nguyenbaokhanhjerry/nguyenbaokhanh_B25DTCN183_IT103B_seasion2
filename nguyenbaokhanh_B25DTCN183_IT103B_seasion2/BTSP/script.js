@@ -42,7 +42,7 @@ if (name != "") {
 let day_V2;
 if (newDay <= 0) {
   console.log("Cảm ơn bạn đã trả đúng hạn");
-} else if (newDay > 1 && newDay < 5) {
+} else if ( newDay < 5) {
   newAccount = newDay * 5000;
   day_V2 = `quá hạn ${newDay} ngày`;
 } else if (newDay > 6 && newDay < 10) {
@@ -59,3 +59,4 @@ console.log("Quyền hạn: ", result_V2);
 console.log("Kết quả mượn: ", result);
 console.log("Tình trạng trả sách: ", day_V2);
 console.log("Tiền phạt: ", newAccount);
+
